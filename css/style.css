@@ -1,0 +1,123 @@
+@charset "UTF-8";
+/* CSS Document plantagenet cherokee*/
+
+/* Global */
+@font-face {
+	font-family: 'Horrorfind', 'Granite';
+	src: url("fonts/Horrorfind.ttf"), url("fonts/Granite.ttf");
+}
+
+* {
+	margin: 0; 
+	padding: 0;
+	box-sizing: border-box;
+}
+
+img {max-width: 100%;}
+
+/* Typography */
+
+body {
+	font-size: calc(0.6em + 0.6vw);
+	text-align: center;
+	font-family: 'Granite';
+	margin: 0; 
+	padding: 0;
+	line-height: 1.4em;
+	color: white;
+	background-color: gray;
+}
+main {
+	background-color: gray;
+}
+h1 {
+	font-size: calc(3em + 3vw);
+	line-height: 1em;
+	font-weight: 10;
+	color: black;
+	margin: auto;
+	padding: 8% 0 1% 0;
+	font-family: 'Horrorfind';
+	background-color: lightgray;
+}
+p {
+	background-color: gray;
+	font-size: 1.2em;
+	line-height: 2.5em;
+	padding: 2%;
+}
+a {
+	color: black;
+}
+/* Header */
+header {
+	margin: auto;
+}
+header h2 {
+	font-size: calc(1em + 1vw);
+	line-height: 1.5em;
+	margin: 1% auto;
+	padding: 1%;
+	font-family: 'Granite';
+	color: black;
+	float: left;
+	background-color: lightgray;
+}
+
+/*------------------------------------*\
+    nav
+\*------------------------------------*/
+.nav {
+	position:relative;
+	display:inline-block;
+	padding: 1% 0 0 0;
+	color: black;
+	background-color: lightgray;
+}
+.nav-item {
+	float:left;
+	*display:inline;
+	zoom:1;
+	position:relative;
+	list-style-type: none;
+}
+.nav-item a {
+	display:block;
+	padding: 30px ;
+	text-decoration: none;
+	line-height: .1em;
+}
+.nav-item > a:hover {
+	background-color: lightslategray;
+	color: #ffffff;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+	
+	.nav-mobile {
+		display:block;
+	}
+	.nav {
+		width:100%;
+		margin: auto;
+	}
+	header h2 {
+		font-size: 4em;
+		line-height: 2.5em;
+		margin: auto;
+		font-family: 'Granite';
+	}
+	
+	@font-face {
+	font-family: 'Horrorfind', 'Granite';
+	src: url("fonts/Horrorfind.ttf"), url("fonts/Granite.ttf");
+	}
+}
+
+@media (min-width:320px) and (max-width: 736px){ 
+	header, .row {
+		width: 90%;
+		clear: both;
+		padding: none;
+	}
+}
